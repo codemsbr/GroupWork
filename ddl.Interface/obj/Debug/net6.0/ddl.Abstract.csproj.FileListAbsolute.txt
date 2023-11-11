@@ -1,0 +1,12 @@
+C:\Users\msbr\OneDrive\İş masası\GroupWork\ddl.Interface\bin\Debug\net6.0\ddl.Abstract.deps.json
+C:\Users\msbr\OneDrive\İş masası\GroupWork\ddl.Interface\bin\Debug\net6.0\ddl.Abstract.dll
+C:\Users\msbr\OneDrive\İş masası\GroupWork\ddl.Interface\bin\Debug\net6.0\ddl.Abstract.pdb
+C:\Users\msbr\OneDrive\İş masası\GroupWork\ddl.Interface\obj\Debug\net6.0\ddl.Abstract.csproj.AssemblyReference.cache
+C:\Users\msbr\OneDrive\İş masası\GroupWork\ddl.Interface\obj\Debug\net6.0\ddl.Abstract.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\msbr\OneDrive\İş masası\GroupWork\ddl.Interface\obj\Debug\net6.0\ddl.Abstract.AssemblyInfoInputs.cache
+C:\Users\msbr\OneDrive\İş masası\GroupWork\ddl.Interface\obj\Debug\net6.0\ddl.Abstract.AssemblyInfo.cs
+C:\Users\msbr\OneDrive\İş masası\GroupWork\ddl.Interface\obj\Debug\net6.0\ddl.Abstract.csproj.CoreCompileInputs.cache
+C:\Users\msbr\OneDrive\İş masası\GroupWork\ddl.Interface\obj\Debug\net6.0\ddl.Abstract.dll
+C:\Users\msbr\OneDrive\İş masası\GroupWork\ddl.Interface\obj\Debug\net6.0\refint\ddl.Abstract.dll
+C:\Users\msbr\OneDrive\İş masası\GroupWork\ddl.Interface\obj\Debug\net6.0\ddl.Abstract.pdb
+C:\Users\msbr\OneDrive\İş masası\GroupWork\ddl.Interface\obj\Debug\net6.0\ref\ddl.Abstract.dll
