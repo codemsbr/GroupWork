@@ -7,51 +7,14 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "ddl.Core/1.0.0": {
-        "dependencies": {
-          "GroupWork": "1.0.0"
-        },
         "runtime": {
           "ddl.Core.dll": {}
-        }
-      },
-      "ddl.Exception/1.0.0": {
-        "runtime": {
-          "ddl.Exception.dll": {}
-        }
-      },
-      "ddl.Interface/1.0.0": {
-        "runtime": {
-          "ddl.Interface.dll": {}
-        }
-      },
-      "GroupWork/1.0.0": {
-        "dependencies": {
-          "ddl.Exception": "1.0.0",
-          "ddl.Interface": "1.0.0"
-        },
-        "runtime": {
-          "GroupWork.dll": {}
         }
       }
     }
   },
   "libraries": {
     "ddl.Core/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "ddl.Exception/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "ddl.Interface/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "GroupWork/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
