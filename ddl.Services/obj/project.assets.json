@@ -1,11 +1,62 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "ddl.Abstract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ddl.Abstract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ddl.Abstract.dll": {}
+        }
+      },
+      "ddl.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ddl.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ddl.Core.dll": {}
+        }
+      },
+      "ddl.Exceptions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ddl.Exceptions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ddl.Exceptions.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ddl.Abstract/1.0.0": {
+      "type": "project",
+      "path": "../ddl.Interface/ddl.Abstract.csproj",
+      "msbuildProject": "../ddl.Interface/ddl.Abstract.csproj"
+    },
+    "ddl.Core/1.0.0": {
+      "type": "project",
+      "path": "../ddl.Core/ddl.Core.csproj",
+      "msbuildProject": "../ddl.Core/ddl.Core.csproj"
+    },
+    "ddl.Exceptions/1.0.0": {
+      "type": "project",
+      "path": "../ddl.Exception/ddl.Exceptions.csproj",
+      "msbuildProject": "../ddl.Exception/ddl.Exceptions.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "ddl.Abstract >= 1.0.0",
+      "ddl.Core >= 1.0.0",
+      "ddl.Exceptions >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\msbr\\.nuget\\packages\\": {},
@@ -39,7 +90,17 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWork\\ddl.Core\\ddl.Core.csproj": {
+              "projectPath": "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWork\\ddl.Core\\ddl.Core.csproj"
+            },
+            "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWork\\ddl.Exception\\ddl.Exceptions.csproj": {
+              "projectPath": "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWork\\ddl.Exception\\ddl.Exceptions.csproj"
+            },
+            "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWork\\ddl.Interface\\ddl.Abstract.csproj": {
+              "projectPath": "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWork\\ddl.Interface\\ddl.Abstract.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

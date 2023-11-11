@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWork\\ddl.Exception\\ddl.Exception.csproj",
-      "projectName": "ddl.Exception",
-      "projectPath": "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWork\\ddl.Exception\\ddl.Exception.csproj",
+      "projectUniqueName": "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWork\\ddl.Exception\\ddl.Exceptions.csproj",
+      "projectName": "ddl.Exceptions",
+      "projectPath": "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWork\\ddl.Exception\\ddl.Exceptions.csproj",
       "packagesPath": "C:\\Users\\msbr\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWork\\ddl.Exception\\obj\\",
       "projectStyle": "PackageReference",

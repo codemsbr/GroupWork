@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWork\\ddl.Interface\\ddl.Interface.csproj",
-      "projectName": "ddl.Interface",
-      "projectPath": "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWork\\ddl.Interface\\ddl.Interface.csproj",
+      "projectUniqueName": "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWork\\ddl.Interface\\ddl.Abstract.csproj",
+      "projectName": "ddl.Abstract",
+      "projectPath": "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWork\\ddl.Interface\\ddl.Abstract.csproj",
       "packagesPath": "C:\\Users\\msbr\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWork\\ddl.Interface\\obj\\",
       "projectStyle": "PackageReference",

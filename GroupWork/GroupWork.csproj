@@ -9,8 +9,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ddl.Core\ddl.Core.csproj" />
-    <ProjectReference Include="..\ddl.Exception\ddl.Exception.csproj" />
-    <ProjectReference Include="..\ddl.Interface\ddl.Interface.csproj" />
+    <ProjectReference Include="..\ddl.Exception\ddl.Exceptions.csproj" />
+    <ProjectReference Include="..\ddl.Interface\ddl.Abstract.csproj" />
     <ProjectReference Include="..\ddl.Services\ddl.Services.csproj" />
   </ItemGroup>
 

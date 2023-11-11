@@ -7,7 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\ddl.Core\ddl.Core.csproj" />
+    <ProjectReference Include="..\ddl.Exception\ddl.Exceptions.csproj" />
+    <ProjectReference Include="..\ddl.Interface\ddl.Abstract.csproj" />
   </ItemGroup>
 
 </Project>
