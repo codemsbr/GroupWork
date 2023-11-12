@@ -8,7 +8,7 @@ namespace ddl.Core.Entities
 {
     public class Product
     {
-        static int id;
+        static int id = 1;
         public int Id { get; }
         public string Name { get; set; }
         public float Price { get; set; }

@@ -15,5 +15,13 @@ namespace ddl.Exceptions
         public const string InvalidUserPasswordMessage = "Invalid User Password";
 
         public const string InvalidUserTypeEnumMessage = "Invalid User Type";
+
+        public const string InvalidProductNotFoundMessage = "Product Not Found";
+
+        public const string InvalidBoxNotFoundMessage = "No Products Found in Your Cart";
+
+        public const string ExistingUserExceptionsMessage = "Existing User";
+        public const string InvalidUserPhoneNumberMessage = "Wrong Number Format";
+        public const string İnvalidChoiceMessage = "İnvalid Choice";
     }
 }

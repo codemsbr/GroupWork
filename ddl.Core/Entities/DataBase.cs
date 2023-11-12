@@ -10,5 +10,6 @@ namespace ddl.Core.Entities
     {
         public static List<User> users = new List<User>();
         public static List<Product> products = new List<Product>();
+        public static List<Basket> basket = new List<Basket>();
     }
 }
