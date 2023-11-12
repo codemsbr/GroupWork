@@ -13,20 +13,64 @@ namespace ddl.Services.Controllers
 {
     public static class UserServices
     {
-        public static void Add(User value)
+
+        static void CrudMenu()
         {
-            if ( NullController(value) && UserLoginController(value.Login) && UserPasswordController(value.Password))
-                DataBase.users.Add(value);
+            Console.WriteLine("1.Product Get All");
+            Console.WriteLine("2.Add Product");
+            Console.WriteLine("3.Order Upload");
+            Console.WriteLine("4.Order Remove");
+            Console.Write("Enter User Answer : ");
         }
 
-        public static bool SignIn(User user)
+        public static void CrudBasket()
         {
-            if (!DataBase.users.Any(x => x.Login == user.Login && x.Password == user.Password))
-                throw new InvalidUserNotFound(ExceptionMessage.InvalidUserNotFoundMessage);
-            return true;
-            ///todo: SignIn Sign Tamala return $"Xos Geldiniz {Name} {SurName}"; => yazisini ekrana veer
-            /// end;
+            User user = UserIdSearch();
+            CrudMenu();
+            int answer = Convert.ToInt32(Console.ReadLine());
+            switch (answer)
+            {
+                case 1:
+                    GetAll();
+                    break;
 
+                case 2:
+                    ControllerServices.LoginController();
+                    break;
+                case 3:
+                    CorrectUserType(user);
+                    break;
+
+                case 4:
+                    RemoveUser(user);
+                    break;
+
+                default:
+                    throw new InvalidChoiceException(ExceptionMessage.İnvalidChoiceMessage);
+                    break;
+            }
+        }
+
+        public static User UserIdSearch()
+        {
+            GetAll();
+            Console.Write("Enter User Id : ");
+            return GetUserById(Convert.ToInt32(Console.ReadLine()));
+        }
+
+        public static void Add(User value)
+        {
+            if (NullController(value) && UserSearch(value.Login) && UserPasswordController(value.Password))
+                DataBase.users.Add(value);
+            else
+                throw new ExistingUserExceptions(ExceptionMessage.ExistingUserExceptionsMessage);
+        }
+
+        public static User SignIn(string login,string password)
+        {
+            if (!DataBase.users.Any(x => x.Login == login && x.Password == password))
+                throw new InvalidUserNotFound(ExceptionMessage.InvalidUserNotFoundMessage);
+            return DataBase.users.Find(x => x.Login == login && x.Password == password);
         }
 
         public static void GetAll()
@@ -55,7 +99,7 @@ namespace ddl.Services.Controllers
         public static void CorrectUserType(User value)
         {
             if (NullController(value))
-                GetUserById(value.Id).UserType = ControllerServices.UserType();
+                GetUserById(value.Id).UserType = UserType();
         }
 
         public static void RemoveUser(User value)
@@ -75,16 +119,41 @@ namespace ddl.Services.Controllers
 
         static bool UserPasswordController(string password)
         {
-            Regex regex = new Regex("@\"^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{6,16}$\"");
+            Regex regex = new Regex(@"^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{6,16}$");
             bool passwordController = regex.IsMatch(password);
             
             return passwordController ? passwordController : throw new InvalidUserPaswordException(ExceptionMessage.InvalidUserPasswordMessage);
         }
        
-        static bool NullController(User value)
+        public static bool NullController(User value)
         {
             return value != null ? true :
             throw new InvalidUserNotFound(ExceptionMessage.InvalidUserNotFoundMessage);
+        }
+
+        public static bool UserSearch(string login)
+        {
+          if(DataBase.users.Count != 0)
+            return UserLoginController(login) && DataBase.users.Any(x=> x.Login != login);
+            return UserLoginController(login);
+        }
+
+        static void UserTypeMenu()
+        {
+            Console.WriteLine("1.Admin");
+            Console.WriteLine("2.Member");
+            Console.Write("Enter User Answer : ");
+        }
+
+        public static UserTypeEnum UserType()
+        {
+            UserTypeMenu();
+            int userAnswer = Convert.ToInt32(Console.ReadLine());
+
+            if (userAnswer > 3)
+                throw new InvalidUserTypeEnumException(ExceptionMessage.InvalidUserTypeEnumMessage);
+
+            return (UserTypeEnum)userAnswer;
         }
     }
 }
