@@ -88,7 +88,10 @@ namespace ddl.Services.Controllers
 
         public static void GetAllUserOrder(Basket basket)
         {
-            if (NullController(basket) && DataBase.basket.Any(x => x.User.Id == basket.User.Id))
+            bool nullController = NullController(basket);
+            if (nullController && DataBase.basket.Any(x => x.User.Id == basket.User.Id))
+                Console.WriteLine(GetBasketByUserId(basket.User.Id));
+            else if (nullController && DataBase.basket.Count == 0)
                 Console.WriteLine(GetBasketByUserId(basket.User.Id));
         }
 
