@@ -135,6 +135,7 @@ namespace ddl.Services.Controllers
         {
           if(DataBase.users.Count != 0)
             return UserLoginController(login) && DataBase.users.Any(x=> x.Login != login);
+
             return UserLoginController(login);
         }
 

@@ -2,16 +2,6 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "ddl.Abstract/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/ddl.Abstract.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ddl.Abstract.dll": {}
-        }
-      },
       "ddl.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -35,11 +25,6 @@
     }
   },
   "libraries": {
-    "ddl.Abstract/1.0.0": {
-      "type": "project",
-      "path": "../ddl.Interface/ddl.Abstract.csproj",
-      "msbuildProject": "../ddl.Interface/ddl.Abstract.csproj"
-    },
     "ddl.Core/1.0.0": {
       "type": "project",
       "path": "../ddl.Core/ddl.Core.csproj",
@@ -53,7 +38,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "ddl.Abstract >= 1.0.0",
+      "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWorkEsas\\ddl.Interface\\ddl.Abstract.csproj",
       "ddl.Core >= 1.0.0",
       "ddl.Exceptions >= 1.0.0"
     ]
@@ -65,11 +50,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWork\\ddl.Services\\ddl.Services.csproj",
+      "projectUniqueName": "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWorkEsas\\ddl.Services\\ddl.Services.csproj",
       "projectName": "ddl.Services",
-      "projectPath": "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWork\\ddl.Services\\ddl.Services.csproj",
+      "projectPath": "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWorkEsas\\ddl.Services\\ddl.Services.csproj",
       "packagesPath": "C:\\Users\\msbr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWork\\ddl.Services\\obj\\",
+      "outputPath": "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWorkEsas\\ddl.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -91,14 +76,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWork\\ddl.Core\\ddl.Core.csproj": {
-              "projectPath": "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWork\\ddl.Core\\ddl.Core.csproj"
+            "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWorkEsas\\ddl.Core\\ddl.Core.csproj": {
+              "projectPath": "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWorkEsas\\ddl.Core\\ddl.Core.csproj"
             },
-            "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWork\\ddl.Exception\\ddl.Exceptions.csproj": {
-              "projectPath": "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWork\\ddl.Exception\\ddl.Exceptions.csproj"
+            "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWorkEsas\\ddl.Exception\\ddl.Exceptions.csproj": {
+              "projectPath": "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWorkEsas\\ddl.Exception\\ddl.Exceptions.csproj"
             },
-            "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWork\\ddl.Interface\\ddl.Abstract.csproj": {
-              "projectPath": "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWork\\ddl.Interface\\ddl.Abstract.csproj"
+            "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWorkEsas\\ddl.Interface\\ddl.Abstract.csproj": {
+              "projectPath": "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWorkEsas\\ddl.Interface\\ddl.Abstract.csproj"
             }
           }
         }
@@ -131,5 +116,16 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWorkEsas\\ddl.Interface\\ddl.Abstract.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\msbr\\OneDrive\\İş masası\\GroupWorkEsas\\ddl.Interface\\ddl.Abstract.csproj",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }
